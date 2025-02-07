@@ -1,1 +1,1 @@
-alert("Я Js!");
+//alert("Я Js!");
