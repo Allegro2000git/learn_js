@@ -15,14 +15,10 @@ if (login == 'Сотрудник') {
 }
  */
 
-const showMessage = (login, message) => {
-    message = (login === "Сотрудник")
+    let message = (login === "Сотрудник")
         ?  "Привет"
         : (login === "Директор")
             ? "Здравствуйте"
             : (login === '')
                 ? "Нет логина"
                 : ""
-}
-
-showMessage()
