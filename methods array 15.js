@@ -53,8 +53,8 @@ const filterRangeInPlace = (arr, a, b) => {
 /* 4
 ;
 // ... ваш код для сортировки по убыванию
-alert( arr ); // 8, 5, 2, 1, -10*/
-arr.sort((a,b) => b - a)
+alert( arr ); // 8, 5, 2, 1, -10 */
+//arr.sort((a,b) => b - a)
 
 
 /* 5
@@ -71,3 +71,55 @@ const copySorted = (arr) => arr.slice().sort()
 
 console.log(copySorted(arr))
 console.log(arr)
+
+/* 6
+У вас есть массив объектов user, и в каждом из них есть user.name. Напишите код, который преобразует их в массив имён.
+
+Например:
+let vasya = { name: "Вася", age: 25 };
+let petya = { name: "Петя", age: 30 };
+let masha = { name: "Маша", age: 28 };
+
+let users = [ vasya, petya, masha ];
+
+let names = /* ... ваш код */
+
+let names = users.map(item => item.name)
+
+/* 7
+У вас есть массив объектов user, и у каждого из объектов есть name, surname и id.
+
+Напишите код, который создаст ещё один массив объектов с параметрами id и fullName, где fullName – состоит из name и surname.
+*/
+let vasya1 = { name: "Вася", surname: "Пупкин", id: 1 };
+let petya1 = { name: "Петя", surname: "Иванов", id: 2 };
+let masha1 = { name: "Маша", surname: "Петрова", id: 3 };
+
+let users1 = [ vasya, petya, masha ];
+
+
+let usersMapped = users.map( el => ({
+    id: el.id,
+    fullName: `${el.name} ${el.surname}`
+   })
+)
+
+/* 8
+Напишите функцию sortByAge(users), которая принимает массив объектов со свойством age и сортирует их по нему.
+
+let vasya = { name: "Вася", age: 25 };
+let petya = { name: "Петя", age: 30 };
+let masha = { name: "Маша", age: 28 };
+
+let arr = [ vasya, petya, masha ];
+
+sortByAge(arr);
+
+// теперь: [vasya, masha, petya]
+alert(arr[0].name); // Вася
+alert(arr[1].name); // Маша
+alert(arr[2].name); // Петя*/
+
+const sortByAge = (users) => {
+    users.sort((a,b) => a.age - b.age)
+}
