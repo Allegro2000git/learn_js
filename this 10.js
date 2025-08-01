@@ -10,7 +10,7 @@
 
     let user = makeUser();
 
-//alert( user.ref.name ); // error
+alert( user.ref.name ); // error
 
 // 2 Создайте объект calculator (калькулятор) с тремя методами:
 
@@ -18,7 +18,7 @@
 //sum() (суммировать) возвращает сумму сохранённых значений.
 //mul() (умножить) перемножает сохранённые значения и возвращает результат.
 
-/*
+
 let calculator = {
     read() {
         this.a = +prompt('Введите первое значение', 0)
@@ -34,7 +34,7 @@ let calculator = {
 
 calculator.read();
 alert( calculator.sum() );
-alert( calculator.mul() );*/
+alert( calculator.mul() );
 
 // 3 У нас есть объект ladder (лестница), который позволяет подниматься и спускаться:
 
