@@ -6,11 +6,11 @@
 Вставьте Рэп и Регги в начало массива.
 */
 
-const styles = ["Джаз", "Блюз"]
+/*const styles = ["Джаз", "Блюз"]
 styles.push("Рок-н-ролл")
 styles[Math.floor((styles.length - 1) / 2)] = "Классика"
 //console.log(styles.shift())
-styles.unshift("Рэп", "Регги")
+styles.unshift("Рэп", "Регги")*/
 
 /*
 Напишите функцию sumInput(), которая:
